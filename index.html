@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloud-Signal</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- preloader section -->
+
+
+
+
+    <div class="pre-loader">
+        <!-- Preloader section -->
+        <script>
+            window.addEventListener("load", function() {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden"; // class "loader hidden"
+            });
+
+        </script>
+        <div class="loader">
+            <img src="img/loader.gif" alt="Loading..." />
+            <br>
+            <h1 style="color: #e90c59;margin-left: 30px;"> Cloud-Signal</h1>
+        </div>
+
+    </div>
+
+    <!-- header section  -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto link">
+                        <li class="nav-item  d-flex justify-content-center">
+                            <a class="nav-link" href="#">Our Member <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link " href="#">Assignments</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <section class="body d-flex justify-content-md-end  align-items-center">
+        <div class="right-half">
+
+            <h1 class="texts">Welcome To </h1>
+            <h1 class="texts logo">" Cloud-Signal "</h1>
+            <div class="upper-space">
+                <h1 class="texts">We are</h1>
+                <!-- Typing Words   -->
+                <h1 class="texts"><span class="type" style="color: red"></span></h1>
+            </div>
+            <div class="learn ">
+                
+                    <div class="wrapper d-flex justify-content-md-center">
+                        <ul>
+                            <li class="facebook">
+                                <i class="fas fa-arrow-circle-right" aria-hidden="true"></i>
+                                <div class="slider">
+                                    <p>Learn More About us</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                  <div class="d-none d-sm-block d-md-none d-block d-sm-none d-flex justify-content-center ">
+                  <button type="button" class="btn btn-outline-danger button ">Learn about us</button>
+                   </div>
+                    
+                    
+               
+
+            </div>
+
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+    <!-- Typing JavaScript Setup -->
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: [
+
+                "Web-Developers.",
+                "Freelancers."
+            ],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+
+    </script>
+
+    <!-- The Bootstrap JavaScript Setup -->
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+/* 
+   font-settings
+*/
+
+@font-face {
+    font-family: preloader;
+    src: url(../fonts/DancingScript-Bold.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+/* 
+preloader setup 
+*/
+
+.loader h1 {
+    font-family: preloader;
+}
+
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* 
+header section setup 
+*/
+
+body {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(../img/new1.jpg);
+    background-position: center;
+    height: 70vh;
+    background-size: cover;
+    font-family: regular
+}
+
+
+
+/* 
+nav-img 
+*/
+
+.navbar img {
+    width: 100px;
+}
+
+.navbar {
+    background-color: rgb(233, 233, 233) !important;
+}
+
+/* 
+        body texts 
+*/
+
+.right-half {
+    width: 700px;
+    padding-top: 100px;
+
+}
+
+.right-half .texts {
+    text-align: center;
+}
+
+.right-half .upper-space {
+    margin-top: 50px;
+
+}
+
+.right-half .logo {
+    font-family: preloader;
+}
+
+.right-half .learn a {
+    text-decoration: none;
+    color: black
+}
+
+.right-half .learn .hide {
+    display: none;
+    overflow: hidden;
+}
+
+
+.right-half .learn .hide:hover {
+    display: block;
+}
+
+
+
+
+
+
+
+
+.header .link li a {
+    font-size: 20px;
+    font-weight: 100;
+    color: black !important;
+    margin-left: 30px;
+    padding: 10px !important;
+    border: 2px solid black;
+    transition: .35s;
+
+}
+
+.header .link li a:hover {
+    font-size: 20px;
+    font-weight: 100;
+    color: white !important;
+    background-color: rgb(0, 0, 0);
+    margin-left: 30px;
+    padding: 10px !important;
+    border: 2px solid black;
+    transition: .35s;
+
+}
+
+/* 
+Responsive media section
+*/
+
+
+@media screen and (max-width:700px) {
+    body {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.53), rgb(0, 0, 0)),
+            url(../img/new1.jpg);
+        background-position: left;
+        height: 100vh;
+        background-size: cover;
+        color: white;
+    }
+
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .navbar-toggler-icon {
+        background-color: transparent !important;
+        color: rgb(255, 255, 255) !important;
+        border: 1px solid transparent !important
+    }
+
+    .navbar-light .navbar-toggler {
+        color: transparent !important;
+        border-color: transparent !important;
+        background-color: transparent;
+    }
+
+    .right-half {
+        width: 700px;
+        transform: translate(0%, 20%);
+
+    }
+
+    .header .link li a:hover {
+        font-size: 20px;
+        font-weight: 100;
+        color: black !important;
+        margin-top: 30px;
+        padding: 10px !important;
+        border: 2px solid black;
+        transition: .35s;
+        background-color: transparent !important;
+
+    }
+
+    .header .link li a {
+        font-size: 20px;
+        font-weight: 100;
+        color: white !important;
+        margin-top: 30px;
+        padding: 10px !important;
+        border: 2px solid black;
+        transition: .35s;
+        background-color: black !important;
+
+    }
+
+    .right-half {
+        padding-top: 0px;
+    }
+
+    .wrapper {
+        display: none !important;
+    }
+
+    .learn .button {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .header .link li a {
+        margin-top: 30px;
+        background-color: transparent !important;
+
+    }
+
+    .navbar {
+        background-color: transparent !important;
+    }
+
+}
+
+
+
+
+
+
+/* 
+hover button
+*/
+
+
+
+.wrapper {
+    position: relative;
+
+}
+
+.wrapper ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.wrapper ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+.wrapper ul li .fas {
+    position: relative;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    top: 50px
+}
+
+
+
+
+.wrapper ul li.facebook div.slider {
+    height: 50px;
+
+}
+
+
+.wrapper .slider {
+    content: "";
+    position: relative;
+    left: 50px;
+    width: 0px;
+    height: 20px;
+    border-radius: 3px;
+    transition: all 0.5s 0.3s ease;
+}
+
+.wrapper .slider p {
+
+    text-transform: capitalize;
+    font-size: 40px;
+    color: black;
+    padding: 10px 0px;
+    text-align: center;
+    line-height: 20px;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.wrapper ul li:hover .slider {
+    width: 500px;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .slider p {
+    opacity: 1;
+    transition: all 1s 0.3s ease;
+}
